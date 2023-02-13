@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classificação de satisfação</title>
+    <link rel="stylesheet" href="../static/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+      <div class="page-header">
+          <h1>{{ titulo }}</h1>
+          <p>Digites valores de 0 a 5 nos atributos e saiba qual será a classificação do cliente</p>
+      </div>
+      <form action="/predicaoform" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="gender">Gênero: [1] masculino [2] feminino</label>
+            <input type="text" id="gender" name="gender" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="age">Idade</label>
+            <input type="text" id="age" name="age" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="typeOfTravel">Tipo de viagem [1] viagem pessoal [2] viagem em grupo</label>
+            <input type="text" id="typeOfTravel" name="typeOfTravel" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="wifi-service">Serviço de wifi do hotel [0-5] </label>
+            <input type="text" id="wifi-service" name="wifi-service" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="depature-arrival">Conveniência de partida/chegada [0-5] </label>
+            <input type="text" id="depature-arrival" name="depature-arrival" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="ease-online">Facilidade de reserva on-line [0-5] </label>
+            <input type="text" id="ease-online" name="ease-online" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="hotel-location">Localização do hotel [0-5] </label>
+            <input type="text" id="hotel-location" name="hotel-location" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="food-and-drink">Comida e bebida  [0-5] </label>
+            <input type="text" id="food-and-drink" name="food-and-drink" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="comfort">Conforto [0-5] </label>
+            <input type="text" id="comfort" name="comfort" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="room-enter">Entretenimento na sala comum   [0-5] </label>
+            <input type="text" id="room-enter" name="room-enter" class="form-control">
+          </div>
+           <div class="form-group">
+            <label for="checkin-checkout">Serviço de check-in/check-out   [0-5] </label>
+            <input type="text" id="checkin-checkout" name="checkin-checkout" class="form-control">
+          </div>
+           <div class="form-group">
+            <label for="other">Outro serviço   [0-5] </label>
+            <input type="text" id="other" name="other" class="form-control">
+          </div>
+           <div class="form-group">
+            <label for="cleanliness">Limpeza   [0-5] </label>
+            <input type="text" id="cleanliness" name="cleanliness" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+        </fieldset>
+      </form>
+    </div>
+</body>
+</html>
