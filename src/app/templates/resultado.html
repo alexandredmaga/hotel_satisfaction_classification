@@ -1,23 +1,33 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Previsão Iris</title>
-    <link rel="stylesheet" href="../static/bootstrap.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Previsão Iris</title>
+  <link rel="stylesheet" href="../static/bootstrap.css">
 </head>
+
 <body>
-    <div class="container">
-      <div class="page-header">
-          <h1>{{ titulo }}</h1>
-      </div>
-      <div>
-        <h2>Classe: {{resultado}}</h2>
-      </div>
-      <div>
-        <a href="/"> Voltar</a>
-      </div>
+  <header>
+    <nav class="navbar navbar-light bg-light border">
+      <a class="navbar-brand" href="#">
+        <h2>Europe Hotel satisfaction ⭐ ⭐ ⭐ ⭐ ⭐ ⭐<h2>
+      </a>
+    </nav>
+  </header>
+
+  <div class="container mt-2">
+    <div class="bg-dark text-white border">
+      <h3>{{ titulo }}</h3>
     </div>
+    <div>
+      <h4>Classe: {{resultado}}</h4>
+    </div>
+    <div>
+      <a class="btn btn-primary btn-salvar" href="/"> Voltar</a>
+    </div>
+  </div>
 </body>
+
 </html>
